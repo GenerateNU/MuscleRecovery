@@ -1,0 +1,87 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 4e550305-79d2-4e4a-a502-817ebcc79f9a)
+
+  (paper "A4")
+
+  (title_block
+    (title "Muscle Recovery V1 Schematic")
+    (company "Generate Product Development Studio")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 24.13 99.06) (size 63.5 52.07) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 284c60dd-e199-4b03-b99f-cc7eaed256f8)
+    (property "Sheetname" "EMG" (at 24.13 97.4834 0)
+      (effects (font (size 3 3) bold) (justify left bottom))
+    )
+    (property "Sheetfile" "MuscleEMG.kicad_sch" (at 24.13 151.7146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MuscleRecoveryV1"
+        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 203.2 97.79) (size 63.5 48.26) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 50c43c35-6798-4b23-b9a6-29e92679e65f)
+    (property "Sheetname" "Bootloading" (at 203.2 96.2134 0)
+      (effects (font (size 3 3) bold) (justify left bottom))
+    )
+    (property "Sheetfile" "MuscleBooting.kicad_sch" (at 203.2 146.6346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MuscleRecoveryV1"
+        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 22.86 24.13) (size 63.5 48.26) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 648f095b-a230-48ff-8dbf-d0fbef398770)
+    (property "Sheetname" "Power and Battery" (at 22.86 22.5534 0)
+      (effects (font (size 3 3) bold) (justify left bottom))
+    )
+    (property "Sheetfile" "MusclePower.kicad_sch" (at 22.86 72.9746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MuscleRecoveryV1"
+        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 201.93 24.13) (size 63.5 48.26) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 85edd68f-6119-4dbf-9af0-99f996378c09)
+    (property "Sheetname" "Display" (at 201.93 22.5534 0)
+      (effects (font (size 3 3) bold) (justify left bottom))
+    )
+    (property "Sheetfile" "MuscleDisplay.kicad_sch" (at 201.93 72.9746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MuscleRecoveryV1"
+        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

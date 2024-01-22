@@ -1,0 +1,15 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 1b297475-1180-473f-a383-f1bed4c2498b)
+
+  (paper "A4")
+
+  (title_block
+    (title "Power and Battery Schematic")
+    (company "Generate Product Development Studio")
+  )
+
+  (lib_symbols
+  )
+
+)
