@@ -1416,6 +1416,11 @@
     (uuid a5975727-f73b-4810-af92-3438d5143355)
   )
 
+  (text "Hello This is test to see if andy can properly committ"
+    (at 50.8 112.395 0)
+    (effects (font (size 3.81 3.81)) (justify left bottom))
+    (uuid 725b2cd4-4ff8-47c0-8072-0688f1eea01c)
+  )
   (text "Charging Circuitry\n" (at 126.365 20.701 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c1883a2c-9655-4bdd-b116-f2f700bcda67)
