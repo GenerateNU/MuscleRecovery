@@ -1304,7 +1304,7 @@
   (symbol (lib_id "power:GND") (at 142.24 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1fb03d57-75de-4fa9-ad7f-fb681178c2d2)
-    (property "Reference" "#PWR053" (at 142.24 137.16 0)
+    (property "Reference" "#PWR011" (at 142.24 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.24 135.255 0)
@@ -1319,9 +1319,6 @@
     (pin "1" (uuid 94b8313c-43dd-4d19-9ffa-ee73aa4a9528))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "#PWR053") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "#PWR011") (unit 1)
         )
@@ -1432,7 +1429,7 @@
   (symbol (lib_id "Device:C_Small") (at 97.79 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b1d0388-ba36-4124-aae6-a583e3a7d2e1)
-    (property "Reference" "C13" (at 100.33 64.7763 0)
+    (property "Reference" "C12" (at 100.33 64.7763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 99.06 68.58 0)
@@ -1448,9 +1445,6 @@
     (pin "2" (uuid 83e840a8-7ddd-4a85-ad9d-a7807aa4ce2b))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "C13") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "C12") (unit 1)
         )
@@ -1461,7 +1455,7 @@
   (symbol (lib_id "Device:C_Small") (at 107.95 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 424f380e-4cfd-489d-854e-89163c7580e4)
-    (property "Reference" "C12" (at 110.49 64.77 0)
+    (property "Reference" "C13" (at 110.49 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 110.49 67.945 0)
@@ -1477,9 +1471,6 @@
     (pin "2" (uuid bde2aa02-c6a2-430b-a6b1-56ae2d4bae99))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "C12") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "C13") (unit 1)
         )
@@ -1621,7 +1612,7 @@
   (symbol (lib_id "power:GND") (at 97.79 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6712c9b7-bdd3-4705-8a13-4a82490b05ae)
-    (property "Reference" "#PWR052" (at 97.79 78.105 0)
+    (property "Reference" "#PWR046" (at 97.79 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 97.79 76.835 0)
@@ -1636,9 +1627,6 @@
     (pin "1" (uuid 51bb2f39-8487-4adb-bea0-bf7fa7b617de))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "#PWR052") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "#PWR046") (unit 1)
         )
@@ -1725,7 +1713,7 @@
   (symbol (lib_id "power:+3V3") (at 97.79 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 814fd643-2ba5-46fd-8ae7-bcde1ccfc219)
-    (property "Reference" "#PWR051" (at 97.79 60.96 0)
+    (property "Reference" "#PWR015" (at 97.79 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 97.79 52.705 0)
@@ -1740,9 +1728,6 @@
     (pin "1" (uuid 37f1e180-48ba-4b4a-ac1e-7d1267bb1932))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "#PWR051") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "#PWR015") (unit 1)
         )
@@ -1853,7 +1838,7 @@
   (symbol (lib_id "power:GND") (at 107.95 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ba964490-bc03-475b-92ae-40df6199fecb)
-    (property "Reference" "#PWR053" (at 107.95 78.105 0)
+    (property "Reference" "#PWR047" (at 107.95 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 76.2 0)
@@ -1868,9 +1853,6 @@
     (pin "1" (uuid 9656d15f-c6d7-4dc1-9048-bee91d672068))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "#PWR053") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "#PWR047") (unit 1)
         )
@@ -1931,7 +1913,7 @@
   (symbol (lib_id "RF_Module:ESP32-WROOM-32") (at 142.24 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4eb7856-6521-4b64-a4a2-524580ca0566)
-    (property "Reference" "U6" (at 128.905 53.975 0)
+    (property "Reference" "U4" (at 128.905 53.975 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ESP32-WROOM-32" (at 128.905 56.515 0)
@@ -1984,9 +1966,6 @@
     (pin "9" (uuid 5a21e2bc-e83a-4981-8cb9-c6b83210087d))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
-          (reference "U6") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
           (reference "U4") (unit 1)
         )
