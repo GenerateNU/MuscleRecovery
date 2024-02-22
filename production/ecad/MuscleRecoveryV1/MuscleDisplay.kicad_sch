@@ -1412,8 +1412,8 @@
     (property "Datasheet" "~" (at 60.96 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid b9411538-fb50-4135-a6bc-461c36040b60))
     (pin "1" (uuid 6e58c6da-3ae3-4a7c-b356-2111f46a1422))
+    (pin "2" (uuid b9411538-fb50-4135-a6bc-461c36040b60))
     (instances
       (project "MuscleRecoveryV1"
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/85edd68f-6119-4dbf-9af0-99f996378c09"
@@ -1463,8 +1463,8 @@
     (property "Datasheet" "~" (at 60.96 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid aa9249c0-9680-4fab-b507-d07306e4ae8c))
     (pin "1" (uuid fdab7d9f-8704-412a-aa66-f878d4f780d3))
+    (pin "2" (uuid aa9249c0-9680-4fab-b507-d07306e4ae8c))
     (instances
       (project "MuscleRecoveryV1"
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/85edd68f-6119-4dbf-9af0-99f996378c09"
@@ -1785,8 +1785,8 @@
     (property "Datasheet" "~" (at 158.75 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid fa1f5179-c714-416b-97e0-b046c00340d5))
     (pin "1" (uuid c55aa43c-4bc9-4065-9a59-83dad30aac7f))
+    (pin "2" (uuid fa1f5179-c714-416b-97e0-b046c00340d5))
     (instances
       (project "MuscleRecoveryV1"
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/85edd68f-6119-4dbf-9af0-99f996378c09"
