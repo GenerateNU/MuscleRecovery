@@ -2123,7 +2123,7 @@
     (property "Value" "ESP32-WROOM-32E__16MB_" (at 139.7 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "ESP32-WROOM-32E__16MB_:XCVR_ESP32-WROOM-32E__16MB_" (at 143.51 144.78 0)
+    (property "Footprint" "Muscle_Recovery_Footprint_Library:XCVR_ESP32-WROOM-32E__16MB_" (at 143.51 144.78 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 139.7 91.44 0)
