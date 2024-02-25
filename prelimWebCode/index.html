@@ -26,24 +26,6 @@
 <body>
 <h1>Muscle Recovery Data</h1>
 
-<!--<script>-->
-<!--  window.addEventListener('DOMContentLoaded', function() {-->
-<!--    const searchParams = new URL(location).searchParams;-->
-<!--    const inputs = Array.from(document.querySelectorAll('input[id]'));-->
-<!--    input.addEventListener('change', function(event) {-->
-<!--      const newSearchParams = new URL(location).searchParams;-->
-<!--      if (event.target.checked) {-->
-<!--        newSearchParams.set(input.id, event.target.checked);-->
-<!--      } else {-->
-<!--        newSearchParams.delete(input.id);-->
-<!--      }-->
-<!--      history.replaceState({}, '', Array.from(newSearchParams).length ?-->
-<!--                                   location.pathname + '?' + newSearchParams : location.pathname);-->
-<!--    })-->
-<!--  });-->
-<!--</script>-->
-
-
 <!--<p>This sample illustrates the use of the Web Bluetooth API to retrieve basic-->
 <!--  device information from a nearby Bluetooth Low Energy Device. You may want to-->
 <!--  check out the <a href="device-info-async-await.html">Device Info (Async-->
@@ -94,52 +76,71 @@
   <pre id="log"></pre>
 </div>
 
+<script>
 
-<!--<script>-->
-<!--  if (/Chrome\/(\d+\.\d+.\d+.\d+)/.test(navigator.userAgent)){-->
-<!--    // Let's log a warning if the sample is not supposed to execute on this-->
-<!--    // version of Chrome.-->
-<!--    if (45 > parseInt(RegExp.$1)) {-->
-<!--      ChromeSamples.setStatus('Warning! Keep in mind this sample has been tested with Chrome ' + 45 + '.');-->
-<!--    }-->
-<!--  }-->
-<!--</script>-->
 
-<script>function onButtonClick() {
-  let filters = [];
-  filters.push({name: "Generate ECE Muscle Recovery"});
-  filters.push({services: ["4fafc201-1fb5-459e-8fcc-c5c9c331914b"]})
-
-  let options = {};
-  options.filters = filters;
-  log('Requesting Bluetooth Device...');
-  log('with ' + JSON.stringify(options));
-  navigator.bluetooth.requestDevice(options)
-    .then(device => {
-      //log('Connecting to GATT Server...');
-      return device.gatt.connect();
-    })
-    .then(server => {
-      //log('Getting Service...');
-      return server.getPrimaryService("4fafc201-1fb5-459e-8fcc-c5c9c331914b");
-    })
-    .then(service => {
-      //log('Getting Characteristics...');
-      return service.getCharacteristic("beb5483e-36e1-4688-b7f5-ea07361b26a8");
-    })
-    .then(characteristic => {
-      characteristic.addEventListener('characteristicvaluechanged', handleValChanged);
-      return characteristic.readValue();
-    })
-    .catch(error => {
-      log('Argh! ' + error);
-    });
-
-  function handleValChanged(event) {
-    let charVal = event.target.value.getUint8(0);
-    log('Val is ' + charVal);
+  function onButtonClick() {
+    connectDevice();
   }
-}
+
+  function connectDevice() {
+    let filters = [
+      {name: "Generate ECE Muscle Recovery"},
+      {services: ["4fafc201-1fb5-459e-8fcc-c5c9c331914b"]}
+    ];
+
+    let options = {filters: filters};
+
+    log('Requesting Bluetooth Device...');
+    log('with ' + JSON.stringify(options));
+
+    let characteristic;
+
+    navigator.bluetooth.requestDevice(options)
+      .then(device => {
+        log('Connecting to GATT Server...');
+        return device.gatt.connect();
+      })
+      .then(server => {
+        log('Getting Service...');
+        return server.getPrimaryService("4fafc201-1fb5-459e-8fcc-c5c9c331914b");
+      })
+      .then(service => {
+        log('Connecting to characteristic...');
+        return service.getCharacteristic("beb5483e-36e1-4688-b7f5-ea07361b26a8");
+      })
+      .then(char => {
+        characteristic = char;
+        log('Characteristic found. Adding event listener...');
+        characteristic.addEventListener('characteristicvaluechanged', handleValChanged);
+        return characteristic.startNotifications();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
+    function handleValChanged(event) {
+      log('Inside callback...');
+      let charVal = event.target.value.getUint8(0);
+      log('Val is ' + charVal);
+      console.log(charVal);
+    }
+
+    // Continuously read the characteristic every second
+    setInterval(() => {
+      if (characteristic) {
+        log('Reading characteristic...1');
+        characteristic.readValue()
+          .then(value => {
+            console.log(value.getUint8(0));
+          })
+          .catch(error => {
+            console.error('Error reading characteristic:', error);
+          });
+      }
+    }, 1000);
+  }
+
 </script>
 
 
@@ -152,7 +153,6 @@
       ChromeSamples.clearLog();
       onButtonClick();
     }
-
   });
 </script>
 
