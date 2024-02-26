@@ -119,17 +119,26 @@
         console.error('Error:', error);
       });
 
+    let data = [];
+    let index = 0;
+    let sessionLengthInSeconds = 10;
+
     function handleValChanged(event) {
-      log('Inside callback...');
-      let charVal = event.target.value.getUint8(0);
-      log('Val is ' + charVal);
-      console.log(charVal);
+      data[index] = event.target.value.getUint8(0);
+      if (index == sessionLengthInSeconds) {
+        log('Data From this 10 seconds Session: ');
+        for (i = 0; i < index; i++) {
+          log(data[i]);
+        }
+        index = 0;
+      }
+      index++;
     }
+
 
     // Continuously read the characteristic every second
     setInterval(() => {
       if (characteristic) {
-        log('Reading characteristic...1');
         characteristic.readValue()
           .then(value => {
             console.log(value.getUint8(0));
