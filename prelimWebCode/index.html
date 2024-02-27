@@ -6,6 +6,8 @@
   <meta name="description" content="Muscle Recovery Data">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>Muscle Recovery Data</title>
   <script>
     // Add a global error event listener early on in the page load, to help ensure that browsers
@@ -24,6 +26,8 @@
 </head>
 
 <body>
+
+  
 <h1>Muscle Recovery Data</h1>
 
 <!--<p>This sample illustrates the use of the Web Bluetooth API to retrieve basic-->
@@ -76,7 +80,70 @@
   <pre id="log"></pre>
 </div>
 
+<div style="display:flex; justify-content: space-between; width:90%; margin:auto;">
+  <!-- Main Graph -->
+  <div style="width:70%;">
+      <canvas id="myChart"></canvas>
+  </div>
+
+  <!-- Side Column with Smaller Graphs -->
+  <div style="width:20%;">
+      <canvas id="smallGraph1" style="margin-bottom:10px;"></canvas>
+      <canvas id="smallGraph2" style="margin-bottom:10px;"></canvas>
+      <canvas id="smallGraph3"></canvas>
+  </div>
+</div>
+
 <script>
+
+    var mainChart;
+   // Sample data for the main graph
+    const mainLabels = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
+    var mainData = {
+        labels: mainLabels,
+        datasets: [{
+            label: 'Session',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: []  
+        }]
+    };
+
+    // Configuration for the main graph
+    var mainConfig = {
+        type: 'line',
+        data: mainData,
+        options: {
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: 'EMG Signal Value'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true, 
+                    text: 'Session Data',
+                    position: 'top',
+                    font: {
+                        size: 32
+                    }
+                },
+                legend: {
+                    display: false
+                }
+            }
+        }
+    };
+
+
+    // Create the chart
+window.onload = function() {
+  var ctx = document.getElementById('myChart').getContext('2d');
+  mainChart = new Chart(ctx, mainConfig);
+};
 
 
   function onButtonClick() {
@@ -117,23 +184,39 @@
       })
       .catch(error => {
         console.error('Error:', error);
+
       });
 
-    let data = [];
+    let mydata = [];
     let index = 0;
-    let sessionLengthInSeconds = 10;
+    let sessionLengthInSeconds = 10; //should be 9
 
     function handleValChanged(event) {
-      data[index] = event.target.value.getUint8(0);
+      mydata[index] = event.target.value.getUint16(0); //loads data for a second
+      log("index:" + index + ", Data:" + mydata[index]);
       if (index == sessionLengthInSeconds) {
-        log('Data From this 10 seconds Session: ');
-        for (i = 0; i < index; i++) {
-          log(data[i]);
-        }
         index = 0;
+        log('Data From this 10 seconds Session: ');
+
+        mainChart.data.datasets[0].data = mydata;
+        mainChart.update();
+
+        /*
+      var mainChart = new Chart(
+      document.getElementById('myChart'),
+        mainConfig
+      );
+      */
+      
       }
-      index++;
+      else {
+        index++;
+      }
+    
     }
+
+
+
 
 
     // Continuously read the characteristic every second
@@ -141,7 +224,7 @@
       if (characteristic) {
         characteristic.readValue()
           .then(value => {
-            console.log(value.getUint8(0));
+            console.log(value.getUint16(0));
           })
           .catch(error => {
             console.error('Error reading characteristic:', error);
