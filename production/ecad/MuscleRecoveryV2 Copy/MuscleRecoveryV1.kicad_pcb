@@ -879,7 +879,7 @@
       (net 50 "DTR") (pinfunction "~{DTR}") (pintype "output") (tstamp ceef51bf-5d1e-43c4-80c0-1a2c77f2face))
     (pad "29" smd rect (at 0 0) (size 3.35 3.35) (layers "F.Cu" "F.Mask")
       (net 10 "GND") (pinfunction "GND") (pintype "passive") (tstamp a5352ea2-50ce-472a-9ba2-8e6e6748af6c))
-    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1410,7 +1410,7 @@
     (property "SnapEDA_Link" "https://www.snapeda.com/parts/B3F-1000/Omron+Electronics+Inc-EMC+Div/view-part/?ref=snap")
     (path "/50c43c35-6798-4b23-b9a6-29e92679e65f/1f171e07-2b95-4134-b1a0-631718d15bb3")
     (attr smd)
-    (fp_text reference "S2" (at -3.81 -0.83 180) (layer "F.SilkS")
+    (fp_text reference "S2" (at -0.123 0.0762 180) (layer "F.SilkS")
         (effects (font (size 0.75 0.75) (thickness 0.15)))
       (tstamp bac5a134-69a3-496b-a090-e2aff8bd4c81)
     )
@@ -2493,7 +2493,7 @@
       (net 13 "+3.3V") (pinfunction "Pin_1") (pintype "passive") (tstamp d4012771-6ea2-49c1-9750-7093d051e34d))
     (pad "2" thru_hole oval (at 0 2.54 180) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 26 "Net-(D7-A)") (pinfunction "Pin_2") (pintype "passive") (tstamp 15d33e2f-da28-474e-a15d-bfa61a42e5c3))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2554,7 +2554,7 @@
       (net 26 "Net-(D7-A)") (pinfunction "S") (pintype "passive") (tstamp 975bc46b-6ed4-471b-8349-99e9db5696e8))
     (pad "3" smd roundrect (at 0.9375 0) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 10 "GND") (pinfunction "D") (pintype "passive") (tstamp e44306a7-273a-4dbb-8e7c-f60453fc48ee))
-    (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2788,7 +2788,7 @@
     (property "ki_keywords" "battery charger lithium")
     (path "/648f095b-a230-48ff-8dbf-d0fbef398770/e7d64d2b-588d-4264-a1c6-b2af12c8aeca")
     (attr smd)
-    (fp_text reference "U2" (at 2.921 1.0668 180) (layer "F.SilkS")
+    (fp_text reference "U2" (at 2.921 1.0668) (layer "F.SilkS")
         (effects (font (size 0.75 0.75) (thickness 0.15)))
       (tstamp f0222325-b4ee-4ef0-aad8-6b8d84bca7f6)
     )
@@ -2836,7 +2836,7 @@
       (net 17 "VBUS") (pinfunction "V_{DD}") (pintype "power_in") (tstamp 67894c40-4e7c-4f52-b71b-9069ec7b129e))
     (pad "5" smd roundrect (at 1.1375 -0.95 270) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 72 "Net-(U2-PROG)") (pinfunction "PROG") (pintype "input") (tstamp e5eca915-6a2d-4145-bda7-5b7500c153f6))
-    (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3331,7 +3331,7 @@
     (property "ki_keywords" "Battery gauge I2C")
     (path "/648f095b-a230-48ff-8dbf-d0fbef398770/2a5013a7-12e7-4b52-bfe8-394b91a6f84f")
     (attr smd)
-    (fp_text reference "IC1" (at -3.175 2.413 -180) (layer "F.SilkS")
+    (fp_text reference "IC1" (at -3.175 2.413) (layer "F.SilkS")
         (effects (font (size 0.75 0.75) (thickness 0.15)))
       (tstamp 14862a8e-cfb2-45bf-b3b4-53e12063c418)
     )
@@ -3387,7 +3387,7 @@
       (net 31 "Net-(IC1-SCL)") (pinfunction "SCL") (pintype "input") (tstamp bc48719a-c3d0-4b1d-b634-fd2c0e8c60a7))
     (pad "9" smd rect (at 0 0 270) (size 2.4 1.8) (layers "F.Cu" "F.Mask")
       (net 10 "GND") (pinfunction "EP") (pintype "passive") (tstamp 21252c51-f40b-4dc4-a930-797eca543ced))
-    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4487,12 +4487,12 @@
     (pad "S1" thru_hole oval (at -4.32 1.05) (size 1 1.6) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask") (tstamp e7b90b8a-0c12-4402-ad7c-de97bf2d17f0))
     (pad "S1" thru_hole oval (at 4.32 -3.13) (size 1 2.1) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (tstamp 14a41760-76bc-4395-8df9-785778f0a2fd))
     (pad "S1" thru_hole oval (at 4.32 1.05) (size 1 1.6) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask") (tstamp 7fc0a7b1-0cc9-4985-8d39-4a47d00275b3))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ":KICAD7_3DMODEL_DIR:Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5461,7 +5461,7 @@
     (property "Sheetname" "Display")
     (path "/85edd68f-6119-4dbf-9af0-99f996378c09/16ba4704-e580-4cb2-980d-9f91b9d63ccc")
     (attr through_hole)
-    (fp_text reference "S1" (at -5.024 1.564 -180) (layer "F.SilkS")
+    (fp_text reference "S1" (at -0.056 -0.087 -180) (layer "F.SilkS")
         (effects (font (size 1.4 1.4) (thickness 0.15)))
       (tstamp 71e7ddb7-2c2e-478d-ab1f-90eb4a2dab64)
     )
@@ -5679,7 +5679,7 @@
       (net 77 "Net-(U7-SDA)") (pinfunction "SDA") (pintype "bidirectional") (tstamp 3d4df3ad-bd90-4824-bad2-c551617df5cb))
     (pad "10" smd rect (at 2.15 -1) (size 1.1 0.25) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 76 "Net-(U7-SCL)") (pinfunction "SCL") (pintype "input") (tstamp 207055e1-02ee-45cb-b931-5ce4dcc58082))
-    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5766,7 +5766,7 @@
     (property "SnapEDA_Link" "https://www.snapeda.com/parts/B3F-1000/Omron+Electronics+Inc-EMC+Div/view-part/?ref=snap")
     (path "/50c43c35-6798-4b23-b9a6-29e92679e65f/bf425114-38f7-4d10-8b9e-61cb2b9f428f")
     (attr smd)
-    (fp_text reference "S3" (at -3.683 0 180) (layer "F.SilkS")
+    (fp_text reference "S3" (at -0.254 0.0762 180) (layer "F.SilkS")
         (effects (font (size 0.75 0.75) (thickness 0.15)))
       (tstamp ac07a069-1271-44e9-9db1-6143c1b7cd74)
     )
@@ -5824,7 +5824,7 @@
     (property "ki_keywords" "connector")
     (path "/648f095b-a230-48ff-8dbf-d0fbef398770/d532ed65-35ef-495a-93b7-aca8aa6304c8")
     (attr through_hole)
-    (fp_text reference "J2" (at -3.232 4.191 -180) (layer "F.SilkS")
+    (fp_text reference "J2" (at -3.232 4.191) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b9bb6581-0030-4a83-a1c2-c8b2415dba8d)
     )
@@ -5900,10 +5900,20 @@
       (net 2 "+BATT") (pinfunction "Pin_1") (pintype "passive") (tstamp e38a7cca-da17-4363-94e0-64ab92912486))
     (pad "2" thru_hole circle (at 3.88 0 270) (size 3 3) (drill 1.75) (layers "*.Cu" "*.Mask")
       (net 10 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 624b0ad8-2058-442e-8b18-3d359e695c9d))
-    (model "${KICAD6_3DMODEL_DIR}/Connector.3dshapes/JWT_A3963_1x02_P3.96mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector.3dshapes/JWT_A3963_1x02_P3.96mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step" hide
+      (offset (xyz 0.5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
+    (model "C:/Users/aabre/Desktop/kicad/Kicad External Parts/CHECKED/282834-2.step"
+      (offset (xyz 2 -0.5 0))
+      (scale (xyz 1.5 1.1 1.2))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -6355,8 +6365,23 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f6353b47-7a58-41c6-a642-550719e0f759))
   (gr_line (start 219.268918 107.696) (end 219.268918 63.627)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f7525796-2930-4fb6-89e4-f81b68d4e6d6))
+  (gr_text "RST" (at 197.866 111.76) (layer "F.SilkS" knockout) (tstamp 1645910e-cce0-46b8-a4bd-71494b5b13ed)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  )
+  (gr_text "USER\nBTN\n" (at 169.418 68.453) (layer "F.SilkS" knockout) (tstamp 17d5dae7-3dad-436c-beee-34d8de7967c6)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  )
+  (gr_text "BOOT\n" (at 192.151 111.76) (layer "F.SilkS" knockout) (tstamp 189bafc1-5543-4ac9-8b77-e7257dcaaca6)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  )
+  (gr_text "EKG\nIN\n" (at 210.693 112.903) (layer "F.SilkS" knockout) (tstamp 21616616-a297-411e-98a2-71f12c3fdba8)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  )
   (gr_text "J7" (at 204.47 64.262) (layer "F.SilkS") (tstamp 41e50fee-349d-4c04-933e-b3d34fa75267)
     (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "TO SCREEN" (at 209.042 73.279) (layer "F.SilkS" knockout) (tstamp 9bdc9656-f4e9-484c-a1ee-38b1fbf2a3c8)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
   (dimension (type aligned) (layer "Edge.Cuts") (tstamp 3ed8ae39-253b-473d-b925-141088fc7b36)
     (pts (xy 213.426918 57.975701) (xy 213.426918 113.538))
