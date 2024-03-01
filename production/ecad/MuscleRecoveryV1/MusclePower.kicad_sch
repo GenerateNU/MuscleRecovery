@@ -2548,7 +2548,7 @@
   (symbol (lib_id "power:+3V3") (at 95.25 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1b3b3e9-c1c2-478a-8038-2c1485223030)
-    (property "Reference" "#PWR065" (at 95.25 53.34 0)
+    (property "Reference" "#PWR070" (at 95.25 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 95.25 45.085 0)
@@ -2563,9 +2563,6 @@
     (pin "1" (uuid bd74fdb6-9025-4c90-896f-d9d0ccbd8833))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
-          (reference "#PWR065") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
           (reference "#PWR070") (unit 1)
         )
@@ -2934,7 +2931,7 @@
   (symbol (lib_id "power:+3V3") (at 97.79 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fec03668-69e4-40f7-b21e-00150391dbe4)
-    (property "Reference" "#PWR065" (at 97.79 100.33 0)
+    (property "Reference" "#PWR062" (at 97.79 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 97.79 92.075 0)
@@ -2949,9 +2946,6 @@
     (pin "1" (uuid 86985061-c1f8-4c8d-9ca4-405305190090))
     (instances
       (project "MuscleRecoveryV1"
-        (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a"
-          (reference "#PWR065") (unit 1)
-        )
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/648f095b-a230-48ff-8dbf-d0fbef398770"
           (reference "#PWR062") (unit 1)
         )

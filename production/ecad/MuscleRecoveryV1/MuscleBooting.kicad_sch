@@ -2751,7 +2751,7 @@
     (property "Value" "USB4110-GF-A" (at 29.21 38.1 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "USB4110-GF-A_GCT" (at 8.89 43.18 0)
+    (property "Footprint" "" (at 8.89 43.18 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "USB4110-GF-A" (at 7.62 43.18 0)
