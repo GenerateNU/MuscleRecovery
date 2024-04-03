@@ -2584,7 +2584,7 @@
   (symbol (lib_id "MuscleRecoverySymbolLibray:W25Q128JVPIQ") (at 38.1 189.865 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38725549-5be6-45c5-8690-68ff235e4671)
-    (property "Reference" "IC2" (at 44.45 183.515 0)
+    (property "Reference" "U10" (at 44.45 183.515 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "W25Q128JVPIQ" (at 50.8 186.055 0)
@@ -2629,7 +2629,7 @@
     (instances
       (project "MuscleRecoveryV1"
         (path "/4e550305-79d2-4e4a-a502-817ebcc79f9a/50c43c35-6798-4b23-b9a6-29e92679e65f"
-          (reference "IC2") (unit 1)
+          (reference "U10") (unit 1)
         )
       )
     )
